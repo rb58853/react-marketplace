@@ -1,4 +1,4 @@
-.Card {
+.CardMarket {
     color: white;
     width: 150px;
     height: 150px;
@@ -8,4 +8,14 @@
     padding: 10px;
     text-align: center;
     border: 1px solid #ffffff80
+}
+.CardView {
+    color: white;
+    text-align: left;
+}
+
+.Price{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-size: small; */
 }

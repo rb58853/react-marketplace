@@ -1,12 +1,9 @@
 import './App.css';
-import Card from "./components/Card.jsx";
+import Marketplace from './components/marketplace/Marketplace.jsx';
 
 function App() {
   return <div className="App">
-    <h1>Hello</h1>
-    <div className='container'>
-      <Card />
-    </div>
+    <Marketplace/>
   </div>;
 }
 
