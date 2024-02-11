@@ -1,0 +1,11 @@
+.spell {
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 25%;
+    box-shadow: 2px 2px 5px #3333;
+    background-color: #00000034;
+    /* padding: 10px; */
+    text-align: center;
+    border: 2px solid #ffffff80
+}

@@ -1,16 +1,30 @@
 const cards =
 {
     "fire-wolf": {
-        name: "fire-wolf",
-        description: "Un lobo que usa fuego pa matar a los enemigos ...",
-        image: "url/to/image",
+        name: "Fire-wolf",
+        description: "Un lobo que usa fuego pa matar a los enemigos ",
+        // image: "/images/cards/fire-wolf.jpg",
+        image: "/images/cards/carta.png",
         type: "monster",
-        rare: "commun",
+        rare: "rare",
         energy: "1",
         attack: "14",
         defense: "3",
         vitality: "45",
-        element: "fire"
+        element: "fire",
+        spells: [
+            "fireball",
+            "fireball",
+            "fireball",
+            "fireball",
+            "fireball",
+            "fireball",
+            "fireball",
+            "fireball",
+            "fireball",
+            "fireball",
+            "fireball",
+        ]
     },
     "card2": {
         name: "card2",
