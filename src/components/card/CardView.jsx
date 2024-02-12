@@ -25,7 +25,7 @@ function CardView({ name = null, price = "0.00", id = '0' }) {
                     <hr class="line" />
                     <div className="details">
                         <h3 className={card.element}>
-                            <img className="icon_element" src="/images/icons/fire_icon.png" alt="icon" />
+                            <img className="icon_element" src={"/images/icons/"+card.element+".png"} alt="icon" />
                             {card.element}
                         </h3>
                         <h3 className={card.rare}> {card.rare} </h3>
@@ -37,9 +37,9 @@ function CardView({ name = null, price = "0.00", id = '0' }) {
                 <div class="stats">
                     <h2 className="head"> <b>Stats</b></h2>
                     <hr class="line" />
-                    <h3 className="stat"> <img className="icon_element" src="/images/icons/attack.png" alt="atk" /> {card.attack}</h3>
-                    <h3 className="stat"> <img className="icon_element" src="/images/icons/defense.png" alt="atk" /> {card.defense}</h3>
-                    <h3 className="stat"> <img className="icon_element" src="/images/icons/vitality.png" alt="atk" />  {card.vitality}</h3>
+                    <h3 className="stat"> <img className="icon_stat" src="/images/icons/attack.png" alt="atk" /> {card.attack}</h3>
+                    <h3 className="stat"> <img className="icon_stat" src="/images/icons/defense.png" alt="atk" /> {card.defense}</h3>
+                    <h3 className="stat"> <img className="icon_stat" src="/images/icons/vitality.png" alt="atk" />  {card.vitality}</h3>
                 </div>
 
                 <div className="spells_space">

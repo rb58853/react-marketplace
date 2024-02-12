@@ -1,5 +1,5 @@
 .spell {
-    color: white;
+    color: rgb(255, 255, 255);
     width: 75px;
     height: 75px;
     border-radius: 25%;
@@ -7,5 +7,68 @@
     background-color: #00000034;
     /* padding: 10px; */
     text-align: center;
-    border: 2px solid #ffffff80
+    border: 2px solid #ffffff80;
+    opacity: 0.9;
+}
+
+.spell.highlight {
+    opacity: 1;
+    border: 2px solid #ffffffcc;
+    zoom: 100%;
+}
+
+.infoBox {
+    display: none;
+    position: fixed;
+    background-color: #00000071;
+    /* border:  1px solid #cccccc81; */
+    padding: 10px;
+    border-radius: 7px;
+    width: 400px;
+    max-width: 30%;
+    padding: 10px;
+
+    /* Posicionamiento específico según tus necesidades */
+}
+
+.infoBox.hidden {
+    display: block;
+}
+
+.infoBox>* {
+    margin-top: 2%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.right_bottom {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    /* float: right; */
+    margin-right: 10px;
+    /* margin-top: 100px; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.damage {
+    color: rgb(107, 161, 207);
+    /* font-style: italic; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.icon_cost {
+    height: 25px;
+}
+
+.spell_element {
+    font-size: 22px;
+    width: auto;
+}
+
+.spell_element >* {
+    padding-left: 5px;
+    padding-right: 5px;
+    /* margin-right: 5px; */
 }

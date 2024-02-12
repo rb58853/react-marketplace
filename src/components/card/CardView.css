@@ -29,6 +29,7 @@
 
 .text {
   width: 100%;
+  max-width: 50%;
   height: auto;
   text-align: left;
 }
@@ -87,7 +88,7 @@
   padding: 10px;
 }
 
-.stats>* {
+.stats >* {
   margin-top: 0px;
   margin-bottom: 5px;
   margin-left: 5%;
@@ -95,24 +96,30 @@
 }
 
 .stat {
-  font-size: 300;
+  font-size: 22px;
   color: white;
   border-radius: 4px;
   background-color: #ffffff0e;
   padding: 5px;
+  max-width: 200px;
+}
+
+.icon_stat{
+  height: 25px;
 }
 
 .details {
   display: flex;
   border-radius: 7px;
   text-align: left;
-  font-size: 22px;
+  font-size: 17px;
   grid-template-columns: auto 1fr;
   gap: 15px;
 }
 
 .details>* {
   padding: 5px;
+  margin-right: 5px; 
 }
 
 .fire {
@@ -122,7 +129,6 @@
   width: auto;
 }
 
-
 .rare {
   border-radius: 7px;
   color: rgb(112, 255, 124);
@@ -131,7 +137,7 @@
 }
 
 .icon_element {
-  height: 25px;
+  height: 24px;
   box-shadow: 10px 2px 5px #3333;
 }
 
@@ -151,6 +157,7 @@
   color: white;
   border-radius: 7px;
   background-color: #ffffff0e;
+  padding: 5px;
 }
 
 .spells_space>* {
