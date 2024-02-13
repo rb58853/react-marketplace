@@ -25,9 +25,8 @@
     padding: 10px;
     border-radius: 7px;
     width: 400px;
-    max-width: 30%;
-    padding: 10px;
-
+    max-width: 70%;
+    /* padding: 10px; */
     /* Posicionamiento específico según tus necesidades */
 }
 
@@ -43,13 +42,12 @@
 }
 
 .right_bottom {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    /* float: right; */
-    margin-right: 10px;
-    /* margin-top: 100px; */
+    display: flex;
+    place-content: end;
     font-family: 'Courier New', Courier, monospace;
+}
+.right_bottom>*{
+    font-size: 20px;
 }
 
 .damage {
@@ -58,17 +56,45 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.icon_cost {
-    height: 25px;
-}
-
-.spell_element {
-    font-size: 22px;
+.damage_type {
+    border-radius: 7px;
+    color: rgb(128, 126, 255);
+    background-color: rgba(144, 103, 255, 0.205);
     width: auto;
 }
 
-.spell_element >* {
+.healt_type {
+    border-radius: 7px;
+    color: rgb(104, 255, 111);
+    background-color: rgba(23, 255, 81, 0.205);
+    width: auto;
+}
+
+.icon_cost {
+    height: 20px;
+    margin-left: 10px;
+}
+.text_cost{
+    display: flex;
+    place-items: center;
+    color: rgb(123, 202, 255);
+}
+.text_cooldown{
+    display: flex;
+    place-items: center;
+    color: rgb(255, 184, 92);
+    /* bottom: 10px;
+    position: inherit; */
+}
+
+.spell_details {
+    display: flex;
+    font-size: 22px;
+    width: fit-content;
+}
+
+.spell_details>* {
     padding-left: 5px;
     padding-right: 5px;
-    /* margin-right: 5px; */
+    margin-right: 10px;
 }

@@ -7,7 +7,8 @@ const spells =
         cost: "1",
         cooldown:"3",
         damage: "25",
-        element: "fire"
+        element: "fire",
+        type: "damage"
     }
 };
 
