@@ -46,7 +46,8 @@
     place-content: end;
     font-family: 'Courier New', Courier, monospace;
 }
-.right_bottom>*{
+
+.right_bottom>* {
     font-size: 20px;
 }
 
@@ -58,28 +59,30 @@
 
 .damage_type {
     border-radius: 7px;
-    color: rgb(128, 126, 255);
+    color: rgb(126, 167, 255);
     background-color: rgba(144, 103, 255, 0.205);
     width: auto;
 }
 
 .healt_type {
+    color: rgb(4, 255, 25);
+    background-color: rgba(66, 209, 0, 0.151);
     border-radius: 7px;
-    color: rgb(104, 255, 111);
-    background-color: rgba(23, 255, 81, 0.205);
-    width: auto;
+    width: fit-content;
 }
 
 .icon_cost {
     height: 20px;
     margin-left: 10px;
 }
-.text_cost{
+
+.text_cost {
     display: flex;
     place-items: center;
     color: rgb(123, 202, 255);
 }
-.text_cooldown{
+
+.text_cooldown {
     display: flex;
     place-items: center;
     color: rgb(255, 184, 92);
@@ -89,12 +92,14 @@
 
 .spell_details {
     display: flex;
-    font-size: 22px;
     width: fit-content;
+    /* font-size: 22px; */
 }
 
 .spell_details>* {
     padding-left: 5px;
     padding-right: 5px;
     margin-right: 10px;
+    gap: 10px;
+    border-radius: 5px;
 }
