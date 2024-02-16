@@ -4,7 +4,7 @@ const cards =
         name: "Fire-wolf",
         description: "Un lobo que usa fuego pa matar a los enemigos ",
         // image: "/images/cards/fire-wolf.jpg",
-        image: "/images/cards/carta.png",
+        image: "/images/cards/card.png",
         type: "monster",
         rare: "rare",
         energy: "1",

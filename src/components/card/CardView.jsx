@@ -16,11 +16,15 @@ function CardView({ name = null, price = "0.00", id = '0' }) {
     return (
         <div className="full">
             <div class="card">
-                {/* <div className="container_img">
-                <img src={card.image} alt="card image" />
-            </div> */}
+                <div className='container_images'>
+                    <img className='background' src={"/images/backgrounds/" + card.element + ".png"} alt="card image" />
 
-                <img className='background' src="/images/backgrounds/plant.png" alt="card image" />
+                    <div className="card_image_container">
+                        <img className="card_image" src={card.image} alt="card image" />
+                        <p className='card_description'> descripcion de la carta</p>
+                    </div>
+                </div>
+
                 <div className="namespace">
                     <h1>{card.name}
                         {/* <h4 className="type">
@@ -53,14 +57,14 @@ function CardView({ name = null, price = "0.00", id = '0' }) {
                                 <b>COUNT/MAX
                                 </b>
                             </h4>
-                            <h3 className="count"> {card.count + "/" + card.max_count+"  "}
-                            <img
-                                        onMouseEnter={() => setShowInfo(true)}
-                                        onMouseLeave={() => setShowInfo(false)}
+                            <h3 className="count"> {card.count + "/" + card.max_count + "  "}
+                                <img
+                                    onMouseEnter={() => setShowInfo(true)}
+                                    onMouseLeave={() => setShowInfo(false)}
 
-                                        className={`count_info_icon ${showInfo ? 'highlight' : ''}`} src={"/images/icons/info.png"} alt={name} />
+                                    className={`count_info_icon ${showInfo ? 'highlight' : ''}`} src={"/images/icons/info.png"} alt={name} />
                             </h3>
-                            <div className={`count_info ${showInfo ? '' :'hidden'}`}>
+                            <div className={`count_info ${showInfo ? '' : 'hidden'}`}>
                                 Existen <code>{card.count}</code> cartas <b> {card.name}</b>, el maximo de cartas iguales a esta que pueden existir es <code>{card.max_count}</code>.
                             </div>
                         </div>
