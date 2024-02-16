@@ -18,20 +18,18 @@
 }
 
 .infoBox {
-    display: none;
-    position: fixed;
-    background-color: #00000071;
-    /* border:  1px solid #cccccc81; */
+    z-index: 1;
+    display: block;
+    position: absolute;
+    background-color: #1a1a1af3;
     padding: 10px;
     border-radius: 7px;
     width: 400px;
     max-width: 70%;
-    /* padding: 10px; */
-    /* Posicionamiento específico según tus necesidades */
 }
 
 .infoBox.hidden {
-    display: block;
+    display: none;
 }
 
 .infoBox>* {
@@ -58,17 +56,17 @@
 }
 
 .damage_type {
-    border-radius: 7px;
-    color: rgb(126, 167, 255);
+    color: rgb(111, 169, 255);
     background-color: rgba(144, 103, 255, 0.205);
-    width: auto;
 }
 
 .healt_type {
     color: rgb(4, 255, 25);
     background-color: rgba(66, 209, 0, 0.151);
-    border-radius: 7px;
-    width: fit-content;
+}
+.purge_type{
+    color: rgb(184, 4, 255);
+    background-color: rgba(255, 0, 234, 0.151);
 }
 
 .icon_cost {
@@ -102,4 +100,5 @@
     margin-right: 10px;
     gap: 10px;
     border-radius: 5px;
+    width: fit-content;
 }

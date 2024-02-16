@@ -1,6 +1,8 @@
 import "./CardView.css";
 import cards from "../../data/static_cards"
 import Spell from "../spell/spell.jsx"
+import "../elements/elements.css"
+import "../elements/rare.css"
 
 function CardView({ name = null, price = "0.00", id = '0' }) {
     let image_path = cards[name].image

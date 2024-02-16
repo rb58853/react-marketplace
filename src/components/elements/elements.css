@@ -1,0 +1,62 @@
+.fire {
+  color: rgb(255, 100, 39);
+  background-color: rgba(255, 187, 0, 0.137);
+}
+
+.fire>* {
+  margin-right: 5px;
+}
+
+.light {
+  color: rgb(251, 255, 39);
+  background-color: rgba(217, 255, 0, 0.137);
+}
+
+.light>* {
+  margin-right: 5px;
+}
+
+.poison {
+  color: rgb(0, 128, 53);
+  background-color: rgba(0, 202, 78, 0.137);
+}
+
+.poison>* {
+  margin-right: 5px;
+}
+
+.electric {
+  color: rgb(0, 132, 255);
+  background-color: rgba(0, 204, 255, 0.137);
+}
+
+.electric>* {
+  margin-right: 5px;
+}
+
+.ice {
+  color: rgb(139, 232, 255);
+  background-color: rgba(102, 212, 255, 0.137);
+}
+
+.ice>* {
+  margin-right: 5px;
+}
+
+.plant {
+  color: rgb(0, 189, 25);
+  background-color: rgba(51, 255, 0, 0.137);
+}
+
+.plant>* {
+  margin-right: 5px;
+}
+
+.physic{
+  color: rgb(167, 167, 167);
+  background-color: rgba(211, 211, 211, 0.137);
+}
+
+.physic>* {
+  margin-right: 5px;
+}

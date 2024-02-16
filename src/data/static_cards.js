@@ -14,6 +14,13 @@ const cards =
         element: "fire",
         spells: [
             "fireball",
+            "thunder",
+            "curative_leaf",
+            "sun-light",
+            "ice-rain",
+            "poison-axe",
+            "meteoro-rain",
+            "lancer-attack",
             "fireball",
             "fireball",
             "fireball",
@@ -31,11 +38,7 @@ const cards =
             "fireball",
             "fireball",
             "fireball",
-            "fireball",
-            "fireball",
-            "fireball",
-            "fireball",
-            "fireball",
+
         ]
     },
     "card2": {
