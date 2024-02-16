@@ -61,8 +61,8 @@
 }
 
 .healt_type {
-    color: rgb(4, 255, 25);
-    background-color: rgba(66, 209, 0, 0.151);
+    color: rgb(255, 4, 4);
+    background-color: rgba(209, 0, 0, 0.151);
 }
 .purge_type{
     color: rgb(184, 4, 255);

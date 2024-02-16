@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import "./CardView.css";
 import cards from "../../data/static_cards"
 import Spell from "../spell/spell.jsx"
@@ -10,6 +11,7 @@ function CardView({ name = null, price = "0.00", id = '0' }) {
     let spells = card.spells.map(item => {
         return <Spell name={item} />
     })
+    let [showInfo, setShowInfo] = useState(false);
 
     return (
         <div className="full">
@@ -43,6 +45,23 @@ function CardView({ name = null, price = "0.00", id = '0' }) {
                             </h4>
                             <div className="details">
                                 <h3 className={card.rare}> {card.rare} </h3>
+                            </div>
+                        </div>
+
+                        <div className="detail_content">
+                            <h4 className="head_detail_text">
+                                <b>COUNT/MAX
+                                </b>
+                            </h4>
+                            <h3 className="count"> {card.count + "/" + card.max_count+"  "}
+                            <img
+                                        onMouseEnter={() => setShowInfo(true)}
+                                        onMouseLeave={() => setShowInfo(false)}
+
+                                        className={`count_info_icon ${showInfo ? 'highlight' : ''}`} src={"/images/icons/info.png"} alt={name} />
+                            </h3>
+                            <div className={`count_info ${showInfo ? '' :'hidden'}`}>
+                                Existen <code>{card.count}</code> cartas <b> {card.name}</b>, el maximo de cartas iguales a esta que pueden existir es <code>{card.max_count}</code>.
                             </div>
                         </div>
                     </div>

@@ -38,8 +38,10 @@ const cards =
             "fireball",
             "fireball",
             "fireball",
-
-        ]
+        ],
+        count: 13,
+        max_count: 1500
+        
     },
     "card2": {
         name: "card2",
