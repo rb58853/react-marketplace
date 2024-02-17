@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center; /* centrado horizontal */
   align-items: center; /* centrado vertical */
+
 }
 
 .card {
   color: white;
-  margin-top: 5%;
+  margin-top: 110px;
   /* position:inherit; */
 }
 
@@ -91,19 +92,25 @@
 }
 
 .stats{
+/* display: flex; */
 }
+
 .stats>* {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 5px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 15px;
   border-radius: 4px;
+  max-width: 100%;
 }
 
 .stat {
   color: white;
-  background-color: #ffffff05;
+  background-color: #ffffff0c;
   padding: 5px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  border-radius: 5px;
 }
 
 .icon_stat {
@@ -128,7 +135,7 @@
 
 .items {
   display: flex;
-  gap: 5%;
+  gap: 15px;
 }
 
 .count {
@@ -190,4 +197,24 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.base_style_content >*{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 4px;
+}
+
+.resistence{
+  border-radius: 5px;
+  padding-left: 5px;
+  /* width: fit-content; */
+}
+
+.column_stats{
+  display: flex;
+  gap: 30px;
+
 }

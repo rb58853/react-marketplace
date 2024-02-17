@@ -80,12 +80,35 @@ function CardView({ name = null, price = "0.00", id = '0' }) {
                         <p>{card.description}</p>
                     </div>
                 </div>
-                <div class="stats">
+                <div className='base_style_content'>
                     <h2 className="head"> Stats</h2>
                     <hr class="line" />
-                    <h3 className="stat"> <img className="icon_stat" src="/images/icons/attack.png" alt="atk" /> {card.attack}</h3>
-                    <h3 className="stat"> <img className="icon_stat" src="/images/icons/defense.png" alt="atk" /> {card.defense}</h3>
-                    <h3 className="stat"> <img className="icon_stat" src="/images/icons/vitality.png" alt="atk" />  {card.vitality}</h3>
+                    <div className='column_stats'>
+                        <div class="stats">
+                            <div className="detail_content">
+                                <h4 className="head_detail_text">
+                                    <b>ATTACK DAMAGE</b>
+                                </h4>
+                                <h3 className="stat"> <img className="icon_stat" src="/images/icons/attack.png" alt="atk" /> {card.attack}</h3>
+                            </div>
+                            <div className="detail_content">
+                                <h4 className="head_detail_text">
+                                    <b>DEFENSE</b>
+                                </h4>
+                                <h3 className="stat"> <img className="icon_stat" src="/images/icons/defense.png" alt="atk" /> {card.defense}</h3>
+                            </div>
+
+                            <div className="detail_content">
+                                <h4 className="head_detail_text">
+                                    <b>VITALITY</b>
+                                </h4>
+                                <h3 className="stat"> <img className="icon_stat" src="/images/icons/vitality.png" alt="atk" />  {card.vitality}</h3>
+                            </div>
+                        </div>
+                        <div className='resistences'>
+                            <h4 className={`resistence ${'poison'}`}> 10%</h4>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="spells_space">

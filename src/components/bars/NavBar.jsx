@@ -2,13 +2,14 @@ import './NavBar.css'; // Asegúrate de importar el archivo CSS que crearás en 
 
 const NavBar = () => {
     return (
-        <nav className="navbar">
-            <div className="navbar-content">
-                <a href="/home">
-                    home
-                </a>
+        <div className='navbar' >
+            <div className="navbar-links">
+                <a href="/home"> home </a>
+                <a href="/marketplace"> {">"}marquetplace</a>
+                <a href="/125512">{">"}125512</a>
             </div>
-        </nav>
+            <hr class="line_bar" />
+        </div>
     );
 };
 
