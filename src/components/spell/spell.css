@@ -1,7 +1,8 @@
 .spell {
     color: rgb(255, 255, 255);
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    max-width: 100%;
+    height: auto;
     border-radius: 25%;
     box-shadow: 2px 2px 5px #3333;
     background-color: #00000034;
@@ -21,8 +22,8 @@
     z-index: 1;
     display: block;
     position: absolute;
-    background-color: #1a1a1af3;
-    padding: 10px;
+    background-color: #13141bf3;
+    /* padding: 10px; */
     border-radius: 7px;
     width: 400px;
     max-width: 70%;
@@ -33,7 +34,7 @@
 }
 
 .infoBox>* {
-    margin-top: 2%;
+    margin-top: 5px;
     margin-bottom: 0%;
     margin-left: 5%;
     margin-right: 5%;

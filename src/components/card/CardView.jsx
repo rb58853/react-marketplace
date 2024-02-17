@@ -21,17 +21,23 @@ function CardView({ name = null, price = "0.00", id = '0' }) {
 
                     <div className="card_image_container">
                         <img className="card_image" src={card.image} alt="card image" />
-                        <p className='card_description'> descripcion de la carta</p>
+                        {/* <p className='card_description'> descripcion de la carta</p> */}
                     </div>
                 </div>
 
                 <div className="namespace">
-                    <h1>{card.name}
-                        {/* <h4 className="type">
-                            {card.type}
-                        </h4> */}
-                    </h1>
+                    <h1>{card.name}</h1>
                     <div className="items">
+
+                        <div className="detail_content">
+                            <h4 className="head_detail_text">
+                                <b>TYPE</b>
+                            </h4>
+                            <div className="details">
+                                <h3 className="type"> {card.type} </h3>
+                            </div>
+                        </div>
+
                         <div className="detail_content">
                             <h4 className="head_detail_text">
                                 <b>CLASS</b>
